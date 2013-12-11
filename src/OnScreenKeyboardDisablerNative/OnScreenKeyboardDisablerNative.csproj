@@ -67,9 +67,13 @@
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ToggleOfficeKeyboardScheme_7508.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -153,6 +157,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToggleOfficeKeyboardScheme_7508.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ToggleOfficeKeyboardScheme_7508.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

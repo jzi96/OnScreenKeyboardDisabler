@@ -8,7 +8,13 @@
     </Window.Resources>
     <Grid>
         <StackPanel Orientation="Vertical">
-            <TextBlock TextAlignment="Center" FontSize="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" FontWeight="Bold">Keyboard Service Switcher</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Image Width="25" VerticalAlignment="Center" 
+                       Source="pack://siteoforigin:,,,/Resources/ToggleOfficeKeyboardScheme_7508.png" />
+                <TextBlock TextAlignment="Center" 
+                           FontSize="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" 
+                           FontWeight="Bold">Keyboard Service Switcher</TextBlock>
+            </StackPanel>
             <Button Click="Button_Click" Margin="50 10">Switch State</Button>
             <StackPanel Orientation="Horizontal" Margin="20 5 20 5">
                 <TextBlock Margin="0 0 10 0">Current State:</TextBlock>

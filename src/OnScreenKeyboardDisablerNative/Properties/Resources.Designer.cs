@@ -59,5 +59,15 @@ namespace zieschang.net.Projects.OnScreenKeyboardDisabler.Native.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ToggleOfficeKeyboardScheme_7508 {
+            get {
+                object obj = ResourceManager.GetObject("ToggleOfficeKeyboardScheme_7508", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
