@@ -9,9 +9,9 @@
     <Grid>
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
-                <Image Width="25" VerticalAlignment="Center" 
+                <Image Width="25" VerticalAlignment="Center" Margin="10 0 5 0"
                        Source="pack://siteoforigin:,,,/Resources/ToggleOfficeKeyboardScheme_7508.png" />
-                <TextBlock TextAlignment="Center" 
+                <TextBlock TextAlignment="Center" VerticalAlignment="Center"
                            FontSize="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" 
                            FontWeight="Bold">Keyboard Service Switcher</TextBlock>
             </StackPanel>
