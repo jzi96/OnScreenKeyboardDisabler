@@ -1,0 +1,21 @@
+﻿<Window x:Class="zieschang.net.Projects.OnScreenKeyboardDisabler.Native.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="clr-namespace:zieschang.net.Projects.OnScreenKeyboardDisabler.Native.Converters"
+        Title="Keyboard Switcher for Win 8.x" Width="350" Height="200" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <converters:ServiceStateColorConverter x:Key="stateConverter"/>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock TextAlignment="Center" FontSize="{DynamicResource {x:Static SystemParameters.WindowCaptionHeightKey}}" FontWeight="Bold">Keyboard Service Switcher</TextBlock>
+            <Button Click="Button_Click" Margin="50 10">Switch State</Button>
+            <StackPanel Orientation="Horizontal" Margin="20 5 20 5">
+                <TextBlock Margin="0 0 10 0">Current State:</TextBlock>
+                <TextBlock TextAlignment="Center" x:Name="CurrentStatus" Background="{Binding Path=Status, Converter={StaticResource stateConverter}}" Text="{Binding Path=Status}"></TextBlock>
+            </StackPanel>
+           
+            <TextBlock  Text="{Binding Path=Messages}" TextWrapping="Wrap" Margin="20 0" ></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
